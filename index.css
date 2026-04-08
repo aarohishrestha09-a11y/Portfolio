@@ -1,0 +1,259 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    
+    #hero {
+      background: #ffffff;
+      padding: 3rem 2rem 2.5rem;
+      border-bottom: 1px solid #e5e5e0;
+    }
+
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      max-width: 700px;
+    }
+
+    .avatar {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: #d4f0e5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 600;
+      color: #0f6e56;
+      flex-shrink: 0;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: #f0f0eb;
+      border: 1px solid #e0e0da;
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    #hero h1 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      color: #888;
+    }
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    display:flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: #007bff;;
+}
+
+   
+
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+
+    .skill-card {
+      background: #f8f8f4;
+      border: 1px solid #e8e8e2;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+
+    .skill-icon {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .skill-name {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .skill-level {
+      font-size: 12px;
+      color: #999;
+    }
+
+    
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.5rem;
+    }
+      
+    
+    .hobbies-intro {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 1.2rem;
+      max-width: 480px;
+      font-weight: 300;
+    }
+
+    .hobbies-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .hobby-tag {
+      background: #f0f0eb;
+      border: 1px solid #e0e0da;
+      border-radius: 20px;
+      padding: 7px 16px;
+      font-size: 13px;
+      color: #444;
+    }
+    
+
+    /* ── Contact ── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact-text p {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0eb;
+      transition: color 0.2s;
+    }
+
+    .contact-link:hover {
+      color: #1a1a1a;
+    }
+
+    /* ── Contact Form ── */
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 5px;
+    }
+
+ .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 9px 12px;
+      font-size: 14px;
+      border: 1px solid #e0e0da;
+      border-radius: 8px;
+      background: #fafaf7;
+      color: #1a1a1a;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #aaa;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+    
+    .form-submit {
+      background: #1a1a1a;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 22px;
+      font-size: 14px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .form-submit:hover {
+      background: #333;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #ffffff;
+      border-top: 1px solid #e5e5e0;
+      padding: 1.5rem 2rem;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 1px;
+    }
